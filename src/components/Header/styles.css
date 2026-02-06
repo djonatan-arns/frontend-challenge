@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  box-shadow: var(--shadow-header);
+}
+
+.header__container {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--button-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

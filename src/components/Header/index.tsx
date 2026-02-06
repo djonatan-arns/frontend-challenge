@@ -1,0 +1,15 @@
+import { IconButton } from '@/components/IconButton'
+import brandIcon from '@/assets/brand.svg'
+import './styles.css'
+
+export function Header() {
+  return (
+    <header className="header">
+      <div className="header__container">
+        <IconButton
+          icon={<img src={brandIcon} alt="Brand" width={16} height={16} />}
+        />
+      </div>
+    </header>
+  )
+}
