@@ -1,0 +1,16 @@
+.icon-button {
+  width: var(--button-size);
+  height: var(--button-size);
+  border-radius: var(--button-radius);
+  background: var(--color-button);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.icon-button:hover {
+  background: var(--color-button-hover);
+}
