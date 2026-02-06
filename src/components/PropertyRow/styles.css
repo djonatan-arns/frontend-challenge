@@ -1,0 +1,35 @@
+.property-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 8px;
+}
+
+.property-row--bordered {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.property-row__key {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.property-row__key-label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-text-muted);
+}
+
+.property-row__value {
+  flex: 1;
+  text-align: right;
+}
+
+.property-row__value-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-text-primary);
+}
