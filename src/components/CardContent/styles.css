@@ -1,0 +1,15 @@
+.card-content {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.card-content--object {
+  padding: 0 16px;
+}
+
+.card-content--array {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
