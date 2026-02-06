@@ -1,0 +1,36 @@
+.file-preview {
+  width: var(--file-preview-width);
+  border-radius: var(--card-border-radius);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  background: var(--color-bg);
+  margin-left: auto;
+}
+
+.file-preview__image {
+  width: var(--file-preview-width);
+  height: var(--file-image-height);
+  background: linear-gradient(135deg, #2a2a2e 0%, #3a3a3e 50%, #2a2a2e 100%);
+}
+
+.file-preview__info {
+  padding: 12px 16px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.file-preview__name {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--color-text-primary);
+}
+
+.file-preview__size {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--color-text-muted);
+}
