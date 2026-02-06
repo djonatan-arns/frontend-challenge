@@ -1,11 +1,21 @@
+@import './styles/tokens.css';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  background: var(--color-bg);
+}
+
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
