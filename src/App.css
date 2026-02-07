@@ -13,7 +13,7 @@
 .card-grid {
   display: flex;
   gap: 16px;
-  padding: var(--section-padding-x);
+  padding: 0 var(--section-padding-x);
   align-items: flex-start;
 }
 

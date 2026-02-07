@@ -10,17 +10,16 @@
 }
 
 .card-content--array {
-  padding: 8px 8px 0 8px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: 500px;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
-/* Remove border-radius inferior dos cards dentro de arrays para criar efeito de continuação visual */
-.card-content--array > .card:last-child {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
+.card-content--array::-webkit-scrollbar {
+  display: none;
 }
