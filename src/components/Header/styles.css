@@ -8,8 +8,9 @@
   height: 52px;
   border-radius: var(--button-radius);
   border: 1px solid var(--color-border);
-  background: var(--color-bg);
+  background: var(--color-button);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 7px;
 }
