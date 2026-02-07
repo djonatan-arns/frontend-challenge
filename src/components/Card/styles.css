@@ -1,9 +1,16 @@
 .card {
+  min-width: 320px;
+  max-width: 472px;
+  max-height: 560px;
+  padding: 0;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--card-border-radius);
   box-shadow: var(--shadow-card);
+  overflow: hidden;
+  opacity: 1;
   transition: border-color 200ms ease-out;
+  flex-shrink: 0;
 }
 
 .card:hover {
@@ -11,7 +18,7 @@
 }
 
 .card__header {
-  height: var(--card-height-collapsed);
+  min-height: var(--card-height-collapsed);
   padding: var(--card-padding);
   display: flex;
   align-items: center;
