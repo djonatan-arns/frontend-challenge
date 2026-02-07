@@ -4,12 +4,23 @@
 }
 
 .card-content--object {
-  padding: 0 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-content--array {
-  padding: 8px;
+  padding: 8px 8px 0 8px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Remove border-radius inferior dos cards dentro de arrays para criar efeito de continuação visual */
+.card-content--array > .card:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
 }
