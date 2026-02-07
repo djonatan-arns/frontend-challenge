@@ -1,9 +1,14 @@
-import type { ReactNode } from 'react'
-import { ChevronUp, ChevronDown } from 'lucide-react'
-import * as icons from 'lucide-react'
+import type { ReactNode, ComponentType } from 'react'
+import { ChevronUp, ChevronDown, Type, Braces, ListOrdered } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
 import { IconButton } from '@/components/IconButton'
 import './styles.css'
+
+const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
+  Type,
+  Braces,
+  ListOrdered,
+}
 
 interface CardProps {
   icon: string
@@ -16,14 +21,6 @@ interface CardProps {
   listIndex?: number
 }
 
-function getLucideIcon(name: string): React.ComponentType<LucideProps> | null {
-  const icon = icons[name as keyof typeof icons]
-  if (typeof icon === 'function') {
-    return icon as React.ComponentType<LucideProps>
-  }
-  return null
-}
-
 export function Card({
   icon,
   title,
@@ -34,7 +31,7 @@ export function Card({
   children,
   listIndex,
 }: CardProps) {
-  const LucideIcon = getLucideIcon(icon)
+  const LucideIcon = ICON_MAP[icon]
 
   return (
     <div className="card">
