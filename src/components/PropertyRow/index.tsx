@@ -1,10 +1,17 @@
-import * as icons from 'lucide-react'
+import type { ComponentType } from 'react'
+import { Type, Binary, ToggleLeft, Image, CircleCheck } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
-import { CircleCheck } from 'lucide-react'
 import { FilePreview } from '@/components/FilePreview'
 import './styles.css'
 
-const ICON_MAP: Record<string, string> = {
+const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
+  Type,
+  Binary,
+  ToggleLeft,
+  Image,
+}
+
+const TYPE_ICON_MAP: Record<string, string> = {
   string: 'Type',
   number: 'Binary',
   boolean: 'ToggleLeft',
@@ -21,14 +28,6 @@ interface PropertyRowProps {
   isLast?: boolean
 }
 
-function getLucideIcon(name: string): React.ComponentType<LucideProps> | null {
-  const icon = icons[name as keyof typeof icons]
-  if (typeof icon === 'function') {
-    return icon as React.ComponentType<LucideProps>
-  }
-  return null
-}
-
 export function PropertyRow({
   icon,
   label,
@@ -38,8 +37,8 @@ export function PropertyRow({
   fileSize,
   isLast,
 }: PropertyRowProps) {
-  const iconName = icon ?? ICON_MAP[type]
-  const LucideIcon = iconName ? getLucideIcon(iconName) : null
+  const iconName = icon ?? TYPE_ICON_MAP[type]
+  const LucideIcon = iconName ? ICON_MAP[iconName] : null
 
   return (
     <div className={`property-row${isLast ? '' : ' property-row--bordered'}`}>
