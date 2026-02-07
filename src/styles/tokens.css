@@ -2,7 +2,7 @@
   /* Colors */
   --color-bg: #131316;
   --color-surface: #1A1A1E;
-  --color-button: #26272B;
+  --color-button: #1A1A1E;
   --color-button-hover: #3F3F46;
   --color-border: #26272B;
   --color-text-primary: #FAFAFA;
@@ -22,7 +22,6 @@
   --card-height-collapsed: 64px;
   --card-border-radius: 10px;
   --card-padding: 12px;
-  --card-gap: 16px;
   --icon-container-size: 32px;
   --icon-container-radius: 6px;
   --icon-size: 16px;
