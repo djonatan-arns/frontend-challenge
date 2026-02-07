@@ -2,7 +2,7 @@
   width: var(--button-size);
   height: var(--button-size);
   border-radius: var(--button-radius);
-  background: var(--color-button);
+  background: transparent;
   border: none;
   display: flex;
   align-items: center;
