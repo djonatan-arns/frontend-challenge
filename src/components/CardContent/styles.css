@@ -4,13 +4,13 @@
 }
 
 .card-content--object {
-  padding: 16px;
+  padding: 15px 16px 16px;
   display: flex;
   flex-direction: column;
 }
 
 .card-content--array {
-  padding: 15px 7px;
+  padding: 15px 8px 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;

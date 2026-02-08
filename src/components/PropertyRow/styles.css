@@ -7,6 +7,7 @@
 
 .property-row--bordered {
   border-bottom: 1px solid var(--color-border);
+  padding-bottom: 11px;
 }
 
 .property-row__key {
@@ -25,6 +26,15 @@
 .property-row__value {
   flex: 1;
   text-align: right;
+}
+
+.property-row--image .property-row__key {
+  flex: 1;
+}
+
+.property-row--image .property-row__value {
+  align-self: stretch;
+  text-align: left;
 }
 
 .property-row__value-text {
