@@ -1,15 +1,8 @@
-import type { ReactNode, ComponentType } from 'react'
-import { ChevronUp, ChevronDown, Type, Braces } from 'lucide-react'
-import type { LucideProps } from 'lucide-react'
-import { FigmaListOrdered } from '@/components/icons/FigmaListOrdered'
+import type { ReactNode } from 'react'
+import { ChevronUp, ChevronDown } from 'lucide-react'
+import { ICON_MAP } from '@/constants/iconMap'
 import { IconButton } from '@/components/IconButton'
 import './styles.css'
-
-const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
-  Type,
-  Braces,
-  ListOrdered: FigmaListOrdered as ComponentType<LucideProps>,
-}
 
 interface CardProps {
   icon: string

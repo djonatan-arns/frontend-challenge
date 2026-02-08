@@ -1,17 +1,8 @@
-import type { ComponentType } from 'react'
-import { Type, Binary, Image, CircleCheck } from 'lucide-react'
-import type { LucideProps } from 'lucide-react'
+import { CircleCheck } from 'lucide-react'
 import type { PrimitiveNodeType } from '@/types'
-import { FigmaToggleLeft } from '@/components/icons/FigmaToggleLeft'
+import { ICON_MAP } from '@/constants/iconMap'
 import { FilePreview } from '@/components/FilePreview'
 import './styles.css'
-
-const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
-  Type,
-  Binary,
-  ToggleLeft: FigmaToggleLeft as ComponentType<LucideProps>,
-  Image,
-}
 
 const TYPE_ICON_MAP: Record<PrimitiveNodeType, string> = {
   string: 'Type',
