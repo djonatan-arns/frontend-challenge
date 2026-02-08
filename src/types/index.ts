@@ -1,5 +1,7 @@
 export type NodeValueType = 'string' | 'number' | 'boolean' | 'image' | 'object' | 'array'
 
+export type PrimitiveNodeType = 'string' | 'number' | 'boolean' | 'image'
+
 export interface NodeData {
   key: string
   type: NodeValueType

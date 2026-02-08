@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react'
 import { Type, Binary, Image, CircleCheck } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
+import type { PrimitiveNodeType } from '@/types'
 import { FigmaToggleLeft } from '@/components/icons/FigmaToggleLeft'
 import { FilePreview } from '@/components/FilePreview'
 import './styles.css'
@@ -12,7 +13,7 @@ const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
   Image,
 }
 
-const TYPE_ICON_MAP: Record<string, string> = {
+const TYPE_ICON_MAP: Record<PrimitiveNodeType, string> = {
   string: 'Type',
   number: 'Binary',
   boolean: 'ToggleLeft',
@@ -22,7 +23,7 @@ const TYPE_ICON_MAP: Record<string, string> = {
 interface PropertyRowProps {
   icon?: string
   label: string
-  type: 'string' | 'number' | 'boolean' | 'image'
+  type: PrimitiveNodeType
   value?: string | number | boolean
   fileName?: string
   fileSize?: string
