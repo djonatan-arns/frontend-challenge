@@ -29,6 +29,17 @@
   line-height: 20px;
 }
 
+.property-row--boolean {
+  align-items: center;
+}
+
+.property-row--boolean .property-row__value {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
 .property-row--image .property-row__key {
   flex: 1;
 }
