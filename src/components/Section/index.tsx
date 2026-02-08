@@ -15,7 +15,7 @@ interface SectionProps {
 
 export function Section({ name, count, expanded, onToggle, children }: SectionProps) {
   return (
-    <div className="section">
+    <section className="section">
       <div className="section__title">
         <div className="section__info">
           <User size={20} color="var(--color-text-primary)" strokeWidth={1.5} />
@@ -35,6 +35,6 @@ export function Section({ name, count, expanded, onToggle, children }: SectionPr
         />
       </div>
       {expanded && children}
-    </div>
+    </section>
   )
 }
