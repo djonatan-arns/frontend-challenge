@@ -9,7 +9,6 @@
   border-radius: var(--card-border-radius);
   box-shadow: var(--shadow-card);
   overflow: hidden;
-  opacity: 1;
   transition: outline-color 200ms ease-out;
   flex-shrink: 0;
   display: flex;

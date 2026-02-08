@@ -33,8 +33,15 @@ export function PropertyRow({
   const iconName = icon ?? TYPE_ICON_MAP[type]
   const LucideIcon = iconName ? ICON_MAP[iconName] : null
 
+  const className = [
+    'property-row',
+    !isLast && 'property-row--bordered',
+    type === 'image' && 'property-row--image',
+    type === 'boolean' && 'property-row--boolean',
+  ].filter(Boolean).join(' ')
+
   return (
-    <div className={`property-row${isLast ? '' : ' property-row--bordered'}${type === 'image' ? ' property-row--image' : ''}${type === 'boolean' ? ' property-row--boolean' : ''}`}>
+    <div className={className}>
       <div className="property-row__key">
         {LucideIcon && (
           <LucideIcon size={16} color="var(--color-text-muted)" strokeWidth={1.5} />

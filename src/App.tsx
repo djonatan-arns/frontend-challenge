@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState } from 'react'
 import { Header } from '@/components/Header'
 import { Section } from '@/components/Section'
 import { Card } from '@/components/Card'
@@ -11,12 +11,12 @@ function App() {
   const [expandedCards, setExpandedCards] = useState<Record<string, boolean>>({
     Person: true,
     'Random List': true,
-    'list-Person-1': true,
+    'list-Person': true,
   })
 
-  const toggleCard = useCallback((key: string) => {
+  const toggleCard = (key: string) => {
     setExpandedCards(prev => ({ ...prev, [key]: !prev[key] }))
-  }, [])
+  }
 
   return (
     <div className="app">

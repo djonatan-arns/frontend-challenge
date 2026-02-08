@@ -47,7 +47,7 @@ export function CardContent(props: CardContentProps) {
   return (
     <div className="card-content card-content--array">
       {props.items.map((item, index) => {
-        const cardKey = `list-${item.key}-${index}`
+        const cardKey = `list-${item.key}`
         const isExpandable = item.type === 'object'
         const isExpanded = props.expandedCards[cardKey] ?? false
 
