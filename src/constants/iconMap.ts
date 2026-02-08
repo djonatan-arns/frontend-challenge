@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react'
 import { Type, Braces, Binary, Image } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
+
 import { FigmaListOrdered } from '@/components/icons/FigmaListOrdered'
 import { FigmaToggleLeft } from '@/components/icons/FigmaToggleLeft'
 

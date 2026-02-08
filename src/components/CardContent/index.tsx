@@ -1,6 +1,7 @@
 import type { NodeData, NodeItem, PrimitiveNodeType } from '@/types'
 import { PropertyRow } from '@/components/PropertyRow'
 import { Card } from '@/components/Card'
+
 import './styles.css'
 
 const PRIMITIVE_TYPES = new Set<PrimitiveNodeType>(['string', 'number', 'boolean', 'image'])

@@ -23,7 +23,7 @@
 
 .card-grid {
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-4);
   align-items: flex-start;
 }
 

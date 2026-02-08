@@ -1,9 +1,11 @@
 import { useState } from 'react'
+
 import { Header } from '@/components/Header'
 import { Section } from '@/components/Section'
 import { Card } from '@/components/Card'
 import { CardContent } from '@/components/CardContent'
 import { sectionData } from '@/data/mockData'
+
 import './App.css'
 
 function App() {

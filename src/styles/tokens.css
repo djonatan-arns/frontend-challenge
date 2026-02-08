@@ -13,8 +13,13 @@
   /* Typography */
   --font-family: 'Noto Sans', sans-serif;
 
+  /* Spacing scale */
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+
   /* Dimensions */
-  --content-padding: 16px;
+  --content-padding: var(--spacing-4);
   --header-height: 52px;
   --header-gap: 16px;
   --section-title-height: 52px;

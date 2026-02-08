@@ -1,7 +1,9 @@
 import { CircleCheck } from 'lucide-react'
+
 import type { PrimitiveNodeType } from '@/types'
 import { ICON_MAP } from '@/constants/iconMap'
 import { FilePreview } from '@/components/FilePreview'
+
 import './styles.css'
 
 const TYPE_ICON_MAP: Record<PrimitiveNodeType, string> = {

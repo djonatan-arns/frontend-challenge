@@ -1,4 +1,5 @@
 import pictureSvg from '@/assets/picture.svg'
+
 import './styles.css'
 
 interface FilePreviewProps {

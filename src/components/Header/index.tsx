@@ -1,5 +1,6 @@
 import { IconButton } from '@/components/IconButton'
 import brandIcon from '@/assets/brand.svg'
+
 import './styles.css'
 
 export function Header() {

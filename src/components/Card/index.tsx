@@ -1,7 +1,9 @@
 import type { ReactNode } from 'react'
 import { ChevronUp, ChevronDown } from 'lucide-react'
+
 import { ICON_MAP } from '@/constants/iconMap'
 import { IconButton } from '@/components/IconButton'
+
 import './styles.css'
 
 interface CardProps {

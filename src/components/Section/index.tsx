@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
 import { User, ChevronUp, ChevronDown } from 'lucide-react'
+
 import { IconButton } from '@/components/IconButton'
+
 import './styles.css'
 
 interface SectionProps {
