@@ -35,14 +35,14 @@
 }
 
 .file-preview__name {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 100%;
   color: var(--color-text-primary);
 }
 
 .file-preview__size {
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 400;
   line-height: 100%;
   color: var(--color-text-muted);
