@@ -1,16 +1,39 @@
-# React + Vite
+# Front-end Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Implementation of a Figma design — a collapsible node inspector with nested cards and interactive states.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> https://frontend-challenge-eight-steel.vercel.app
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** + TypeScript (strict mode)
+- **Vite 7**
+- **Lucide React** for icons
+- **Plain CSS** with BEM naming and custom properties as design tokens
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start development server             |
+| `npm run build`   | Type-check + production build        |
+| `npm run lint`    | Run ESLint                           |
+| `npm run preview` | Preview the production build locally |
+
+## Project Structure
+
+```
+src/
+  components/       # UI components with co-located styles
+  constants/        # Shared constants
+  data/             # Mock data
+  styles/           # Design tokens and global styles
+  types/            # Shared TypeScript types
+```
