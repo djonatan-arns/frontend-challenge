@@ -7,7 +7,8 @@ export function Header() {
     <header className="header">
       <div className="header__container">
         <IconButton
-          icon={<img src={brandIcon} alt="Brand" width={16} height={16} />}
+          icon={<img src={brandIcon} alt="" width={16} height={16} />}
+          ariaLabel="Home"
         />
       </div>
     </header>

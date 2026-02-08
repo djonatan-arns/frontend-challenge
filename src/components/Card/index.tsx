@@ -59,6 +59,8 @@ export function Card({
                 : <ChevronDown size={16} color="var(--color-text-muted)" strokeWidth={1.5} />
             }
             onClick={onToggle}
+            ariaLabel={expanded ? `Collapse ${title}` : `Expand ${title}`}
+            ariaExpanded={expanded}
           />
         )}
       </div>

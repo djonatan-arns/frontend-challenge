@@ -28,6 +28,8 @@ export function Section({ name, count, expanded, onToggle, children }: SectionPr
               : <ChevronDown size={16} color="var(--color-text-primary)" strokeWidth={1.5} />
           }
           onClick={onToggle}
+          ariaLabel={expanded ? 'Collapse section' : 'Expand section'}
+          ariaExpanded={expanded}
         />
       </div>
       {expanded && children}
