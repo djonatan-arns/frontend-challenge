@@ -18,7 +18,7 @@ export function Section({ name, count, expanded, onToggle, children }: SectionPr
         <div className="section__info">
           <User size={20} color="var(--color-text-primary)" />
           <span className="section__name">
-            {name} ({count})
+            {name} <span className="section__count">({count})</span>
           </span>
         </div>
         <IconButton

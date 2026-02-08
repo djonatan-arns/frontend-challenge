@@ -7,13 +7,23 @@
 }
 
 .app__content {
-  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 88px;
+  position: relative;
+}
+
+.app__content::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(-1 * var(--content-padding));
+  right: calc(-1 * var(--content-padding));
+  height: 1px;
+  background-color: var(--color-border);
 }
 
 .card-grid {
   display: flex;
   gap: 16px;
-  padding: 0 var(--section-padding-x);
   align-items: flex-start;
 }
 

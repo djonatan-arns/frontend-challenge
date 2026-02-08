@@ -21,7 +21,7 @@
 
 .card__header {
   min-height: var(--card-height-collapsed);
-  padding: var(--card-padding);
+  padding: 8px 12px;
   display: flex;
   align-items: center;
   gap: 4px;
