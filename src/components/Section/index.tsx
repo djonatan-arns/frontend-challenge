@@ -16,7 +16,7 @@ export function Section({ name, count, expanded, onToggle, children }: SectionPr
     <div className="section">
       <div className="section__title">
         <div className="section__info">
-          <User size={20} color="var(--color-text-primary)" />
+          <User size={20} color="var(--color-text-primary)" strokeWidth={1.5} />
           <span className="section__name">
             {name} <span className="section__count">({count})</span>
           </span>
@@ -24,8 +24,8 @@ export function Section({ name, count, expanded, onToggle, children }: SectionPr
         <IconButton
           icon={
             expanded
-              ? <ChevronUp size={16} color="var(--color-text-primary)" />
-              : <ChevronDown size={16} color="var(--color-text-primary)" />
+              ? <ChevronUp size={16} color="var(--color-text-primary)" strokeWidth={1.5} />
+              : <ChevronDown size={16} color="var(--color-text-primary)" strokeWidth={1.5} />
           }
           onClick={onToggle}
         />

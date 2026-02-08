@@ -1,13 +1,14 @@
 import type { ReactNode, ComponentType } from 'react'
-import { ChevronUp, ChevronDown, Type, Braces, ListOrdered } from 'lucide-react'
+import { ChevronUp, ChevronDown, Type, Braces } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
+import { FigmaListOrdered } from '@/components/icons/FigmaListOrdered'
 import { IconButton } from '@/components/IconButton'
 import './styles.css'
 
 const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
   Type,
   Braces,
-  ListOrdered,
+  ListOrdered: FigmaListOrdered as ComponentType<LucideProps>,
 }
 
 interface CardProps {
@@ -42,7 +43,7 @@ export function Card({
         <div className="card__icon-container">
           <div className="card__icon-bg">
             {LucideIcon && (
-              <LucideIcon size={16} color="var(--color-text-primary)" />
+              <LucideIcon size={16} color="var(--color-text-primary)" strokeWidth={1.5} />
             )}
           </div>
         </div>
@@ -54,8 +55,8 @@ export function Card({
           <IconButton
             icon={
               expanded
-                ? <ChevronUp size={16} color="var(--color-text-muted)" />
-                : <ChevronDown size={16} color="var(--color-text-muted)" />
+                ? <ChevronUp size={16} color="var(--color-text-muted)" strokeWidth={1.5} />
+                : <ChevronDown size={16} color="var(--color-text-muted)" strokeWidth={1.5} />
             }
             onClick={onToggle}
           />

@@ -1,13 +1,14 @@
 import type { ComponentType } from 'react'
-import { Type, Binary, ToggleLeft, Image, CircleCheck } from 'lucide-react'
+import { Type, Binary, Image, CircleCheck } from 'lucide-react'
 import type { LucideProps } from 'lucide-react'
+import { FigmaToggleLeft } from '@/components/icons/FigmaToggleLeft'
 import { FilePreview } from '@/components/FilePreview'
 import './styles.css'
 
 const ICON_MAP: Record<string, ComponentType<LucideProps>> = {
   Type,
   Binary,
-  ToggleLeft,
+  ToggleLeft: FigmaToggleLeft as ComponentType<LucideProps>,
   Image,
 }
 
@@ -44,7 +45,7 @@ export function PropertyRow({
     <div className={`property-row${isLast ? '' : ' property-row--bordered'}${type === 'image' ? ' property-row--image' : ''}${type === 'boolean' ? ' property-row--boolean' : ''}`}>
       <div className="property-row__key">
         {LucideIcon && (
-          <LucideIcon size={16} color="var(--color-text-muted)" />
+          <LucideIcon size={16} color="var(--color-text-muted)" strokeWidth={1.5} />
         )}
         <span className="property-row__key-label">{label}</span>
       </div>
@@ -53,7 +54,7 @@ export function PropertyRow({
           <span className="property-row__value-text">{String(value)}</span>
         )}
         {type === 'boolean' && value === true && (
-          <CircleCheck size={16} color="var(--color-success)" />
+          <CircleCheck size={16} color="var(--color-success)" strokeWidth={1.5} />
         )}
         {type === 'image' && fileName && fileSize && (
           <FilePreview fileName={fileName} fileSize={fileSize} />
